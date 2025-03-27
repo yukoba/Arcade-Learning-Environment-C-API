@@ -210,7 +210,7 @@ class ALEInterface {
   static std::optional<std::string> isSupportedROM(const fs::path& rom_file);
   // Display ALE welcome message
   static std::string welcomeMessage();
-  static void disableBufferedIO();
+  //static void disableBufferedIO();
   static void createOSystem(std::unique_ptr<stella::OSystem>& theOSystem,
                             std::unique_ptr<stella::Settings>& theSettings);
   static void loadSettings(const fs::path& romfile,

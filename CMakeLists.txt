@@ -3,9 +3,6 @@ cmake_minimum_required (VERSION 3.14)
 # Build the C++ shared library
 option(BUILD_CPP_LIB "Build C++ Interface" ON)
 
-# Build the native Python bindings using pybind11
-option(BUILD_PYTHON_LIB "Build Python Interface" ON)
-
 # Enable SDL for screen and audio support
 option(SDL_SUPPORT "Enable SDL support" OFF)
 # Append VCPKG manifest feature
@@ -53,10 +50,7 @@ if (CMAKE_BINARY_DIR STREQUAL CMAKE_SOURCE_DIR)
   ]=])
 endif()
 
-include(ParseVersion)
-parse_version("version.txt" PREFIX ALE)
-
-project(ale VERSION ${ALE_DEFAULT_VERSION}
+project(ale VERSION "0.10.2"
             DESCRIPTION "The Arcade Learning Environment (ALE) - a platform for AI research."
             HOMEPAGE_URL "http://www.arcadelearningenvironment.org"
             LANGUAGES CXX)

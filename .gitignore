@@ -1,4 +1,7 @@
 ## ALE
+/src/ale/ale_test
+*Zone.Identifier
+
 build
 doc/examples/*Example
 

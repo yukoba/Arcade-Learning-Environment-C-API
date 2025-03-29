@@ -1,12 +1,6 @@
-// cd src/ale
-// cp ../../build/src/ale/libale.so .
-// gcc ale_test.c -o ale_test -L . -l ale -O3
-// LD_LIBRARY_PATH=. ./ale_test pong.bin
-
-#include "ale_c_interface.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h> // For strcmp
+#include "ale_c_interface.h"
 
 int main(int argc, char** argv) {
     if (argc < 2) {
